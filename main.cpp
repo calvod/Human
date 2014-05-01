@@ -8,14 +8,51 @@
 
 #include <iostream>
 #include "Conception.h"
+#include "Birth.h"
+#include "Infancy.h"
+#include "Toddlerness.h"
+#include "Childhood.h"
+#include "Preteenness.h"
+#include "Teenage.h"
+#include "College.h"
+#include "Career.h"
+#include "Marriage.h"
+#include "Children.h"
+#include "MiddleAges.h"
+#include "Retirement.h"
+#include "Dementia.h"
+#include "Death.h"
+#include "Afterlife.h"
+#include "InternshipAtBestBuy.h"
+
+
+
 using namespace std;
 
-//the data structures grow, much like the human itself
+//this is going to be existential as shit
 
 int main(int argc, const char * argv[])
 {
-    conceive();
-    
+    bool eternity = true;
+    while (eternity) {
+        conceive();
+        birth();
+        infancy();
+        toddlerness();
+        childhood();
+        preteenness();
+        teenage();
+        college();
+        career();
+        marriage();
+        children();
+        middleAges();
+        retirement();
+        dementia();
+        death();
+        afterlife();
+        internshipAtBestBuy();
+    }
     return 0;
 }
 
