@@ -35,7 +35,8 @@ int main(int argc, const char * argv[])
 {
     bool eternity = true;
     while (eternity) {
-        conceive();
+        Human *mother = new Human;
+        conceive(mother);
         birth();
         infancy();
         toddlerness();

@@ -12,10 +12,11 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include "Human.h"
 
 using namespace std;
 
-void conceive();
+void conceive(Human *mother);
 
 
 #endif /* defined(__Human__Conception__) */

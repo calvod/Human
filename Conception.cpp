@@ -7,9 +7,32 @@
 //
 
 #include "Conception.h"
-void zygote() {}
-void blastocyst() {}
-void nidation() {}
+void zygote() {
+    cout << "undergoing mitosis...\n";
+    //multiply cells by 2 several times
+
+}
+void blastocyst() {
+    cout << "inner cell mass forming...\n";
+    cout << "trophoblast forming...\n";
+    cout << "placenta forming...\n";
+    
+    
+    
+    //should be 200-300 cells at this point, 5 days have passed
+
+}
+void nidation(Human *mother) {
+    bool result = false;
+    cout << "blastocyst is trying to adhere to wall of uterus\n";
+    
+    
+    if (mother->daysAfterOvulation >= 6 || mother->daysAfterOvulation <= 12) {
+        result = true;
+    }
+    
+
+}
 void embryo() {}
 void developHeart() {}
 void beginBrain() {}
@@ -26,7 +49,7 @@ void developFetus() {
 }
 
 
-void conceive() {
+void conceive(Human *mother) {
     
     cout << "Hello, Womb!\n";
     cout << "Please enter the name of your egg: ";
@@ -35,7 +58,7 @@ void conceive() {
     cout << "\n" << name << " is conceiving...\n";
     zygote();
     blastocyst();
-    nidation();
+    nidation(mother);
     embryo();
     developHeart();
     beginBrain();
